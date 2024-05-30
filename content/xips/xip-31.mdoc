@@ -1,0 +1,47 @@
+---
+title: Integrate WalletConnect with Infinex
+id: 31
+author: blockchainwinston
+type: core-upgrade
+network: Ethereum, Base, Optimism, Arbitrum, Polygon POS
+status: Draft
+created: '2024-05-XX' TBC**********************************************
+---
+# Proposal Summary
+XIP-31 proposes the integration of the WalletConnect API with the Infinex platform. This integration aims to enhance user experience by enabling seamless connections between various wallets and decentralized applications (dApps) that support WalletConnect.
+
+# Specification
+
+## Overview
+
+This proposal outlines the steps and components required to integrate WalletConnect into the Infinex platform. By incorporating WalletConnect, Infinex users will be able to connect their preferred wallets to the platform, facilitating a smoother and more secure interaction with various dApps.
+
+## Rationale
+
+The rationale for integrating WalletConnect with Infinex is to provide users with a more versatile and user-friendly experience. WalletConnect is widely adopted across the blockchain ecosystem, allowing users to connect to a variety of dApps without compromising security or convenience. This integration will make Infinex more accessible and appealing to a broader user base.
+
+## Technical Specification
+
+Technical Stack:
+1. **Ethereum, Base, Optimism, Arbitrum, Polygon POS Blockchains**: These blockchains will be supported by the WalletConnect integration, enabling interactions with dApps across multiple networks.
+2. **WalletConnect API**: The core API that facilitates secure connections between users' wallets and dApps.
+3. **PostgreSQL**: A robust relational database system for storing user session data and connection logs.
+4. **Redis**: An in-memory data structure store, used for caching session information to ensure fast access and improved performance.
+5. **Websockets**: Used to manage real-time communication between the user interface and the backend, ensuring instant updates and a responsive user experience.
+6. **Swagger**: Used to design and document the API endpoints, ensuring that the integration is well-documented and easy to maintain.
+
+Technical implementation required to enable WalletConnect is:
+1. Install Dependencies: @walletconnect/client @walletconnect/web3-provider
+2. Frontend Integration: 
+    2.1 Set Up WalletConnect Provider
+    2.2 Implement Connection Logic
+    2.3 Handle Events
+3. Backend Integration
+    3.1 Set Up API Endpoints
+    3.2 Manage Sessions
+4. Testing and Deployment
+5. Documentation
+
+# Copyright
+
+Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
